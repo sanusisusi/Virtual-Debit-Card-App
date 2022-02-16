@@ -1,0 +1,127 @@
+body {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+    margin-top: 3rem;
+    transform: scaleY(3);
+    letter-spacing: 3px;
+    color: #000;
+}
+
+#bank {
+    margin-top: 5%;
+    float: right;
+    width: fit-content;
+    color: rgb(151, 175, 197);
+    letter-spacing: 5px;
+    transform: scaleY(3);
+}
+
+.a {
+    position:fixed;
+    height: 300px;
+    width: 500px;
+    top:30%;
+    left:30%;
+    background-image: url(img/bg.jpg);
+    border-radius:13px;
+    box-shadow:5px 5px 5px black;
+}
+
+.b {
+    margin-top: 5rem;
+}
+
+#name {
+    position: relative;
+    top: 160px;
+    left: 70px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transform: scaleY(2);
+    width: fit-content;   
+}
+
+* {
+    font-family:serif;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}
+
+div#cvv {
+    position: relative;
+    top: 80px;
+}
+
+#cvv1 {
+    position:absolute ;
+    right:5.2%;
+}
+
+#cvv2 {
+    position:absolute ;
+    right:8.3%;
+}
+
+#cvv3 {
+    position:absolute ;
+    right:11.4%;
+}
+
+.acc {   
+    font-size:2em;
+    position:relative;
+    top:10px;
+    text-align: center;
+    letter-spacing: 8px;   
+}
+
+#validity {
+    position: relative;
+    left: 120px;
+    top: 30px;
+    transform: scaleY(2);
+    letter-spacing: 2px;
+}
+
+#validity_date {
+    position: relative;
+    left: 190px;
+    top: -10px;
+    transform: scaleY(2);
+    letter-spacing: 2px;
+}
+
+#visa {
+    font-family: Permanent Marker;
+    font-size: 35px;
+    letter-spacing: 4px;
+    float: right;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+footer {
+    color: #000;
+    font-size: 15px;
+    margin-top: 30rem;
+    text-align: center;
+}
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (max-width: 320px) {
+body, .a {
+    height: 200px;
+    width: 100px;
+    margin-bottom: 10rem;
+    padding: 2rem;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    }
+}  

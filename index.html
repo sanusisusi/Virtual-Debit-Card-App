@@ -1,0 +1,78 @@
+<!-- Created by Sanusi Abdulkadir-->
+
+<!-- Made with pure html , css and javascript -->
+
+<!-- Thanks for your precious time  --> 
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    
+        <title>Virtual Debit Card</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <header>🎊🎊 Congratulations!! 🎊🎊 <br> You are a VISA Card holder of <u>Sanusi Susi Bank</u> <br>Never share your card details with anyone. Be safe!! Be happy!!</header>
+       
+        <div class="a">
+            
+                <p id="bank"> SANUSI SUSI BANK</p>
+            <div class="b">
+                <p id="name">Sanusi Abdulkadir</p>
+            
+                <div id="cvv">
+                    <span id="cvv1">1</span>
+                    <span id="cvv2">2</span>
+                    <span id="cvv3">3</span>
+                </div>
+            
+                <center id="number" >
+                    <span class="acc" id="acc1">8888</span>
+                    <span class="acc" id="acc2">8888</span>
+                    <span class="acc" id="acc3">8888</span>
+                    <span class="acc" id="acc4">8888</span>
+                </center>
+
+                <!--<p style="font-weight: normal;letter-spacing: 2px; font-size: smaller; position: relative; left: 70px;">0657</p>-->
+            
+                <span id ="validity">VALID <br>THRU</span>
+                    <p id="validity_date" >04/24</p>
+            </div>   
+            <span id="visa">VISA</span>
+        </div>
+        <footer>&copy; 2022 Sanusi Abdulkadir<br/>Software Engineer (React developer)</footer>
+
+        <script>
+
+            window.confirm("🎁 Features :\n\n1. Created with love by Sanusi Abdulkadir \n\n2. Get your virtual debit card\n\n3. Security :\n Get different cvv and card number every time you run the code.");
+
+
+            var user = prompt("Please Enter Your Full Name","Sanusi Abdulkadir");
+
+            document.getElementById("name").innerHTML = user;
+
+            document.getElementById("cvv1").innerHTML = Math.floor((Math.random() * 10));
+                    
+            document.getElementById("cvv2").innerHTML = Math.floor((Math.random() * 10));
+
+            document.getElementById("cvv3").innerHTML = Math.floor((Math.random() * 10));
+
+            document.getElementById("acc1").innerHTML = Math.floor((Math.random() + 8) * 1000) + " ";
+
+            document.getElementById("acc2").innerHTML = Math.floor((Math.random() + 7) * 1000) + " ";
+
+            document.getElementById("acc3").innerHTML = Math.floor((Math.random() + 3) * 1000) + " ";
+
+            document.getElementById("acc4").innerHTML = Math.floor((Math.random() + 2) * 1000);  
+
+        </script>
+        
+    </body>
+</html>
